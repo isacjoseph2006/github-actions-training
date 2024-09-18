@@ -4,8 +4,8 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - run: echo "Hello Isac"
   my-second-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Bye World"
+      - run: echo "Bye Isac"
