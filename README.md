@@ -7,7 +7,7 @@
 1. Open your terminal (or Git Bash on Windows).
 2. Clone the provided repository containing the `src` folder using the following command:
 
-   ```bash
+   ```bash 
    git clone https://github.com/swayaan-training/todoapp.git
    ```
 
