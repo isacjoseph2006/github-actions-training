@@ -1,4 +1,4 @@
-name: 02-01-Simple Workflow
+name: 01-Simple Workflow
 on: workflow_dispatch
 jobs: 
   my-first-job:
