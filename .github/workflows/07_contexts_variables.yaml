@@ -6,6 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Use Workflow Input
+      - name: Use Variables
         run: |
           echo "DEBUG: ${{ vars.debug }}"
