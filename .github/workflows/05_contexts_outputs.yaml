@@ -2,7 +2,7 @@ name: Contexts - Outputs
 on:
   workflow_dispatch:
 jobs:
-  build:
+  check_outputs:
     runs-on: ubuntu-latest
     steps:
       - name: Define Workflow Variable
