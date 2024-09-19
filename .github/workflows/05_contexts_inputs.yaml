@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print release branch
-      run:
-        echo "Release branch is: ${{ input.release_branch }}"
+        run: |
+          echo "Release branch is: ${{ inputs.release_branch }}"
