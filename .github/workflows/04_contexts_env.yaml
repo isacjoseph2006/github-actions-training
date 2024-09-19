@@ -1,0 +1,21 @@
+name: Contexts - env
+on:
+  workflow_dispatch:
+env:
+  MY_WORKFLOW_VAR: Isac's Workflow
+  MY_OVERWRITTEN_VAR: Isac's overwritten var
+
+jobs:
+  check_environment_variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Env Variables
+        env:
+          MY_OVERWRITTEN_VAR: 'Overwritten in step'
+        run: |
+          echo "Workflow env: ${{ env.MY_WORKFLOW_VAR }}"
+          echo "Overwritten env: ${{ env.MY_OVERWRITTEN_VAR }}"
+      - name: Print Env Variables
+        run: |
+          echo "Workflow env: ${{ env.MY_WORKFLOW_VAR }}"
+          echo "Overwritten env: ${{ env.MY_OVERWRITTEN_VAR }}"
