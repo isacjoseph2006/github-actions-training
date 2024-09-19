@@ -1,0 +1,15 @@
+name: 02-OS Verification
+on: workflow_dispatch
+jobs: 
+  my-first-job:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Hello Windows"
+  my-second-job:
+    runs-on: macos-latest
+    steps:
+      - run: echo "Hello Macos"
+  my-third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello  Ubuntu"
