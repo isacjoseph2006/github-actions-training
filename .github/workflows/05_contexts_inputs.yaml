@@ -1,0 +1,16 @@
+name: Contexts - inputs
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      release_branch: 
+        type: string
+        default: develop
+
+jobs:
+  print_input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print release branch
+      run:
+        echo "Release branch is: ${{ input.release_branch }}"
