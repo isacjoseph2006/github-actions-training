@@ -9,6 +9,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: git clone https://github.com/githubtraining/hellogitworld.git
-      - run: pwd
-      - run: cd hellogitworld                                                         
+      - run: cd hellogitworld
+      - run: pwd                                                         
       - run: dir
