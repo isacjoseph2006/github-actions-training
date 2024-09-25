@@ -1,0 +1,11 @@
+name: 13-Simple-Workflow-On-Self-Hosted
+on: workflow_dispatch
+jobs: 
+  my-first-job:
+    runs-on: self-hosted
+    steps:
+      - run: pwd
+  my-second-job:
+    runs-on: self-hosted
+    steps:
+      - run: pwd
