@@ -8,7 +8,9 @@ jobs:
   my-second-job:
     runs-on: self-hosted
     steps:
-      - run: git clone https://github.com/githubtraining/hellogitworld.git
-      - run: cd hellogitworld
-      - run: pwd                                                         
-      - run: dir
+      - run: |
+          pwd
+          git clone https://github.com/githubtraining/hellogitworld.git
+          cd hellogitworld
+          pwd                                                         
+          dir
