@@ -23,10 +23,10 @@ jobs:
       run: mvn clean install
       
     - name: Build Docker image
-      run: docker build -t isacjoseph2006/app .
+      run: docker build -t isacjoseph2006/app:1.0 .
 
     - name: Log in to Docker Hub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Push image to Docker Hub
-      run: docker push isacjoseph2006/app
+      run: docker push isacjoseph2006/app:1.0
