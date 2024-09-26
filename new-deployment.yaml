@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: todo-app-container
-          image: <docker-hub-name>/todoapp
+          image: isacjoseph2006/app:1.0
           ports:
             - containerPort: 8081
 ---
